@@ -29,7 +29,7 @@ public class Button : MonoBehaviour
 
 
 	/// <summary>
-	/// Activate of deactivate the button.
+	/// Activate or deactivate the button.
 	/// </summary>
 	/// <param name="on">Button active status.</param>
 	public virtual void Activate(bool on)
