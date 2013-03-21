@@ -11,19 +11,14 @@ using System.Collections;
 public class Button_Manager : MonoBehaviour
 {
 	#region Variables
-	/// <summary>Reference to script with button functions.</summary>
-	public MonoBehaviour Manager;
+	public MonoBehaviour Manager; // Reference to script with button functions.
 	Camera mainCamera;
-	/// <summary>How far to raycast.</summary>
-	public float maxButtonDistance = 10f;
-	/// <summary>Active button being held down.</summary>
-	Button activeButton;
-	/// <summary>Button physics layer.</summary>
-	int buttonLayer;
-	int touchID = -1;
+	public float maxButtonDistance = 10f; // How far to raycast.
+	Button activeButton; // Active button being held down.
+	int buttonLayer; // Button physics layer.
+	int touchID = -1; // FingerID that pressed down button.
 	RaycastHit rayInfo;
 	#endregion
-
 
 
 	void Awake()
@@ -70,5 +65,5 @@ public class Button_Manager : MonoBehaviour
 			}
 		}
 	} // End Update
-
+	
 } // End Button_Manager Class
